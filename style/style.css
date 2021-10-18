@@ -1,0 +1,159 @@
+@import "./fonts.css";
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.container {
+    max-width: 1130px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.btn_gold {
+    border: none;
+    padding: 0 47px;
+    height: 50px;
+    background: #D1A954;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: 0 auto;
+}
+.header_container {
+    display: flex;
+    justify-content: space-between;
+}
+.header_link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.header_link:not(:last-child) {
+    margin-right: 63px;
+}
+.header_phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+}
+.header_phone:before {
+    content: "";
+    position: absolute;
+    background: #D1A954;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+}
+.aside {
+    position: absolute;
+    left: 0;
+    width: 150px;
+    height: calc(100vh - 86px);
+    background: rgba(51, 51, 51, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 86px;
+}
+.aside_contacts {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    transform: rotate(-90deg);
+    width: 244px;
+    margin-bottom: 122px;
+}
+.aside_line {
+    width: 3px;
+    height: 80px;
+    background: #C4C4C4;
+    margin: 40px 0;
+}
+.aside_icon {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+}
+.aside_icon:not(:last-child) {
+    margin-bottom: 30px;
+}
+.aside_icon:hover {
+    color: #D1A954;
+}
+.hero {
+    background: url("../images/hero.png") no-repeat center/cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: -2;
+}
+.hero_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+.hero_info {
+    max-width: 540px;
+}
+.hero_title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 87px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.hero_desc {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 50px 0;
+}
+.hero_poster {
+    margin-left: 125px;
+    position: relative;
+    background: url("../images/poster.png");
+    width: 350px;
+    height: 490px;
+}
+.hero_poster:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 350px;
+    height: 490px;
+    z-index: -1;
+    background: linear-gradient(0deg, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85)), url(../images/poster.png);
+}
